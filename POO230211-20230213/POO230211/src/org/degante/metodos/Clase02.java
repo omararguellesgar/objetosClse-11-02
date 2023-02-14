@@ -1,14 +1,21 @@
-package org.degante.metodos;
+public class metodosArgumentos {
 
-public class Clase02 {
+	public void datosGenerales(String nombre, String apellidoPaterno, String apellidoMaterno, String curp,
+			String nacionalidad) {
+		System.out.printf("Hola " + nombre + apellidoPaterno + apellidoMaterno + " Tu curp es:" + curp
+				+ " Tu nacionalidad es:" + nacionalidad);
+	}
 
-    public static void imprimirNombre(String nombre) {
-        System.out.println("Hola " + nombre);
-    }
+	public void imprimirInfo() {
+		datosGenerales("Omar", " Arguelles", " Garcia", " AUGO95", " Mexicana");
+	}
 
-    public void ejecutar() {
-        imprimirNombre("Edgar");
-        imprimirNombre("Diana");
-        imprimirNombre("Eduardo");
-    }
+	public void materia(String nombreMateria) {
+		System.out.println(" \nPertenece al curso: " + nombreMateria);
+	}
+
+	public void imprimirMateria() {
+		materia("Programaciòn Orientada a Objetos");
+	}
 }
+
